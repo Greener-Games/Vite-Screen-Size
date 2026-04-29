@@ -1,0 +1,37 @@
+name: Publish to NPM
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build plugin
+        run: npm run build -w packages/vite-plugin-screen-size
+
+      - name: Publish to NPM
+        run: |
+          cd packages/vite-plugin-screen-size
+          # Only publish if the version doesn't exist on npm yet
+          CURRENT_VERSION=$(node -p "require('./package.json').version")
+          if npm view @greener-games/vite-plugin-screen-size@$CURRENT_VERSION version > /dev/null 2>&1; then
+            echo "Version $CURRENT_VERSION already exists on NPM. Skipping publish."
+          else
+            npm publish --access public
+          fi
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

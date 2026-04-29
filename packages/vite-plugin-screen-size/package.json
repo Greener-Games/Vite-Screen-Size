@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-screen-size",
+  "name": "@greener-games/vite-plugin-screen-size",
   "version": "1.0.0",
   "description": "Vite plugin to show screen size and breakpoints in dev mode.",
   "type": "module",
