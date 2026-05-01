@@ -25,7 +25,7 @@ pnpm add -D @greener-games/vite-plugin-screen-size
 
 ## Usage
 
-Add it to your `vite.config.ts`:
+Add it to your `vite.config.ts` (or `vite.config.js`):
 
 ```typescript
 import { defineConfig } from 'vite';
@@ -33,6 +33,7 @@ import screenSize from '@greener-games/vite-plugin-screen-size';
 
 export default defineConfig({
   plugins: [
+    // Simple setup with default options (Tailwind breakpoints)
     screenSize()
   ]
 });
@@ -40,7 +41,9 @@ export default defineConfig({
 
 ## Configuration
 
-You can customize the breakpoints or use a different preset.
+The plugin uses Tailwind CSS breakpoints by default. You can change this behavior by providing an options object to the plugin.
+
+You can customize the breakpoints or use a different preset:
 
 ```typescript
 screenSize({
@@ -51,7 +54,7 @@ screenSize({
 
   /**
    * Custom breakpoints mapping name to pixel value.
-   * Overrides preset values if names overlap.
+   * Custom breakpoints will override preset values if the names overlap.
    */
   breakpoints: {
     xs: 480,
@@ -61,6 +64,32 @@ screenSize({
   }
 })
 ```
+
+**Tailwind (Default)**
+```json
+{
+  "sm": 640,
+  "md": 768,
+  "lg": 1024,
+  "xl": 1280,
+  "2xl": 1536
+}
+```
+
+**Bootstrap**
+```json
+{
+  "sm": 576,
+  "md": 768,
+  "lg": 992,
+  "xl": 1200,
+  "xxl": 1400
+}
+```
+
+**None**
+Pass `preset: 'none'` to start with a blank slate, requiring you to provide your own breakpoints object.
+
 
 ### Options
 
