@@ -32,7 +32,7 @@ const PRESETS = {
   none: {},
 };
 
-export default function screenSize(options: ScreenSizeOptions = {}): Plugin {
+export function screenSize(options: ScreenSizeOptions = {}): Plugin {
   const { preset = 'tailwind', breakpoints: customBreakpoints = {} } = options;
 
   const combinedBreakpoints = {
@@ -55,3 +55,5 @@ export default function screenSize(options: ScreenSizeOptions = {}): Plugin {
     },
   };
 }
+
+export default screenSize;
