@@ -10,6 +10,7 @@
     "csp.config.ts"
   ],
   "compilerOptions": {
+    "ignoreDeprecations": "6.0",
     "baseUrl": ".",
     "paths": {
       "@/*": [
