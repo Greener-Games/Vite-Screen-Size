@@ -41,7 +41,7 @@ export default function screenSize(options: ScreenSizeOptions = {}): Plugin {
   };
 
   return {
-    name: 'vite-plugin-screen-size',
+    name: 'vite-screen-size',
     apply: 'serve', // Only apply in dev mode
     transformIndexHtml() {
       return [
