@@ -1,5 +1,5 @@
 import type { Plugin } from 'vite';
-import { getClientScript } from './client.js';
+import { getClientScript } from './client';
 
 export interface ScreenSizeOptions {
   /**
