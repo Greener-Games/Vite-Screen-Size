@@ -27,6 +27,7 @@
     "vue-router": "^5.0.7"
   },
   "devDependencies": {
+    "@greener-games/vite-screen-size": "*",
     "@eslint/js": "^9.21.0",
     "@greener-games/vite-screen-size": "*",
     "@tailwindcss/forms": "^0.5.11",
