@@ -1,5 +1,5 @@
 import type { Plugin } from 'vite';
-import { getClientScript } from './client.js';
+import { getClientScript } from './client';
 
 export interface ScreenSizeOptions {
   /**
@@ -32,7 +32,7 @@ const PRESETS = {
   none: {},
 };
 
-export default function screenSize(options: ScreenSizeOptions = {}): Plugin {
+export function screenSize(options: ScreenSizeOptions = {}): Plugin {
   const { preset = 'tailwind', breakpoints: customBreakpoints = {} } = options;
 
   const combinedBreakpoints = {
@@ -41,7 +41,7 @@ export default function screenSize(options: ScreenSizeOptions = {}): Plugin {
   };
 
   return {
-    name: 'vite-plugin-screen-size',
+    name: 'vite-screen-size',
     apply: 'serve', // Only apply in dev mode
     transformIndexHtml() {
       return [
@@ -55,3 +55,5 @@ export default function screenSize(options: ScreenSizeOptions = {}): Plugin {
     },
   };
 }
+
+export default screenSize;
