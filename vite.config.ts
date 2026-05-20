@@ -5,7 +5,6 @@ import checker from 'vite-plugin-checker';
 import path from 'path';
 import vueDevTools from 'vite-plugin-vue-devtools'
 import screenSize from '@greener-games/vite-screen-size'
-import cspPlugin from '@greener-games/vite-csp'
 
 export default defineConfig({
   plugins: [
