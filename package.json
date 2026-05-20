@@ -19,7 +19,9 @@
     "type-check": "vue-tsc --noEmit",
     "build:app": "vue-tsc --noEmit && vite build",
     "build:workspaces": "npm run build --workspaces --if-present",
-    "publish:test": "npm run publish:test --workspaces --if-present"
+    "publish:test": "npm run publish:test --workspaces --if-present",
+    "release": "semantic-release",
+    "version": "node -e \"const fs = require('fs'); const pkg = JSON.parse(fs.readFileSync('package.json')); if (pkg.workspaces) { const { execSync } = require('child_process'); execSync('npm version ' + pkg.version + ' --workspaces --no-git-tag-version', { stdio: 'inherit' }); }\""
   },
   "dependencies": {
     "pinia": "^3.0.4",
