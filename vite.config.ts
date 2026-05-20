@@ -1,35 +1,16 @@
-import { defineConfig, type Plugin } from 'vite';
+import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import tailwindcss from '@tailwindcss/vite';
 import checker from 'vite-plugin-checker';
 import path from 'path';
-import { cspString } from './csp.config';
 import vueDevTools from 'vite-plugin-vue-devtools'
 import screenSize from '@greener-games/vite-screen-size'
-
-function cspPlugin(): Plugin {
-  return {
-    name: 'vite-plugin-csp',
-    transformIndexHtml() {
-      return [
-        {
-          tag: 'meta',
-          attrs: {
-            'http-equiv': 'Content-Security-Policy',
-            content: cspString,
-          },
-          injectTo: 'head-prepend',
-        },
-      ];
-    },
-  };
-}
+import cspPlugin from '@greener-games/vite-csp'
 
 export default defineConfig({
   plugins: [
     vue(),
     tailwindcss(),
-    cspPlugin(),
     checker({
       enableBuild: false,
       typescript: true,
