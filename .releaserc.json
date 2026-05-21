@@ -20,7 +20,7 @@
     [
       "@semantic-release/npm",
       {
-        "pkgRoot": "plugins/@greener-games/vite=screen-size",
+        "pkgRoot": "plugins/@greener-games/vite-screen-size",
         "npmPublish": false
       }
     ],
