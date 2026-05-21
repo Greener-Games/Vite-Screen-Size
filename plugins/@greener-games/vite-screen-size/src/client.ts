@@ -44,7 +44,7 @@ export const getClientScript = (breakpoints: Record<string, number>) => {
     const h = window.innerHeight;
     sizeEl.textContent = \`\${w} × \${h}\`;
 
-    let active = 'default';
+    let active = 'base';
     const sorted = Object.entries(breakpoints).sort((a, b) => b[1] - a[1]);
     for (const [name, val] of sorted) {
       if (w >= val) {
