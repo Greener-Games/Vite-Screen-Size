@@ -1,17 +1,17 @@
 # vite-screen-size
 
-A monorepo for the `vite-plugin-screen-size` plugin and its demo application.
+A monorepo for the `vite-screen-size` plugin and its demo application.
 
 This project is structured as a monorepo containing both the Vite plugin and a demo application at the root to test and showcase the plugin's functionality.
 
 ## Project Structure
 
 - `/` - The root directory contains a Vue 3 + TypeScript + Vite demo application. This app is used to develop and test the plugin locally.
-- `/packages/vite-plugin-screen-size` - The actual source code for the `@greener-games/vite-plugin-screen-size` plugin.
+- `/plugins/@greener-games/vite-screen-size` - The actual source code for the `@greener-games/vite-screen-size` plugin.
 
 ## For Plugin Users
 
-If you are looking to use the plugin in your own project, please refer to the **[Plugin User Guide & Documentation](./packages/vite-plugin-screen-size/README.md)**.
+If you are looking to use the plugin in your own project, please refer to the **[Plugin User Guide & Documentation](./plugins/@greener-games/vite-screen-size/README.md)**.
 
 ## For Contributors
 
@@ -40,11 +40,11 @@ Make sure you have Node.js and `npm` installed. The project uses npm workspaces.
 
 3. **Develop the Plugin**
 
-   The plugin code is located in `packages/vite-plugin-screen-size`. To make changes to the plugin, you might want to run its watch mode to recompile TypeScript on the fly.
+   The plugin code is located in `plugins/@greener-games/vite-screen-size`. To make changes to the plugin, you might want to run its watch mode to recompile TypeScript on the fly.
 
    Open a new terminal, navigate to the plugin directory, and run the `dev` script:
    ```bash
-   cd packages/vite-plugin-screen-size
+   cd plugins/@greener-games/vite-screen-size
    npm run dev
    ```
 
@@ -56,7 +56,7 @@ Make sure you have Node.js and `npm` installed. The project uses npm workspaces.
 
    To build the plugin:
    ```bash
-   cd packages/vite-plugin-screen-size
+   cd plugins/@greener-games/vite-screen-size
    npm run build
    ```
 
