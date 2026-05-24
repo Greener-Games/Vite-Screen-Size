@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Greener-Games/Vite-Screen-Size/compare/v1.0.1...v1.0.2) (2026-05-24)
+
+
+### Bug Fixes
+
+* Update .releaserc.json ([6bc4559](https://github.com/Greener-Games/Vite-Screen-Size/commit/6bc4559813092acded25166ce3e67fd82af686fc))
+
 ## [1.0.1](https://github.com/Greener-Games/Vite-Screen-Size/compare/v1.0.0...v1.0.1) (2026-05-24)
 
 
