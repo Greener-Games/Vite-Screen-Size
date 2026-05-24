@@ -1,9 +1,9 @@
-# @greener-games/vite-plugin-screen-size
+# @greener-games/vite-screen-size
 
 A lightweight Vite plugin that displays the current screen dimensions and active breakpoint in a small, non-intrusive overlay during development.
 
 ![License](https://img.shields.io/github/license/greener-games/vite-screen-size)
-![NPM Version](https://img.shields.io/npm/v/@greener-games/vite-plugin-screen-size)
+![NPM Version](https://img.shields.io/npm/v/@greener-games/vite-screen-size)
 
 ## Features
 
@@ -16,11 +16,11 @@ A lightweight Vite plugin that displays the current screen dimensions and active
 ## Installation
 
 ```bash
-npm install -D @greener-games/vite-plugin-screen-size
+npm install -D @greener-games/vite-screen-size
 # or
-yarn add -D @greener-games/vite-plugin-screen-size
+yarn add -D @greener-games/vite-screen-size
 # or
-pnpm add -D @greener-games/vite-plugin-screen-size
+pnpm add -D @greener-games/vite-screen-size
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ Add it to your `vite.config.ts` (or `vite.config.js`):
 
 ```typescript
 import { defineConfig } from 'vite';
-import screenSize from '@greener-games/vite-plugin-screen-size';
+import screenSize from '@greener-games/vite-screen-size';
 
 export default defineConfig({
   plugins: [
