@@ -2,6 +2,25 @@
   "name": "my-vue-app",
   "private": true,
   "version": "1.0.2",
+  "author": "Greener Games",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Greener-Games/Vite-Screen-Size.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Greener-Games/Vite-Screen-Size/issues"
+  },
+  "homepage": "https://github.com/Greener-Games/Vite-Screen-Size#readme",
+  "keywords": [
+    "vite",
+    "plugin",
+    "vue",
+    "screen",
+    "size",
+    "breakpoints",
+    "responsive",
+    "development"
+  ],
   "type": "module",
   "workspaces": [
     "plugins/*",
