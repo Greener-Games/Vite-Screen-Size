@@ -2,8 +2,26 @@
   "name": "@greener-games/vite-screen-size",
   "version": "1.0.2",
   "description": "Vite plugin to show screen size and breakpoints in dev mode.",
-  "author": "",
+  "author": "Greener Games",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Greener-Games/Vite-Screen-Size.git",
+    "directory": "plugins/@greener-games/vite-screen-size"
+  },
+  "bugs": {
+    "url": "https://github.com/Greener-Games/Vite-Screen-Size/issues"
+  },
+  "homepage": "https://github.com/Greener-Games/Vite-Screen-Size#readme",
+  "keywords": [
+    "vite",
+    "plugin",
+    "screen",
+    "size",
+    "breakpoints",
+    "responsive",
+    "development"
+  ],
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
