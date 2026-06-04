@@ -3,6 +3,7 @@
 A lightweight Vite plugin that displays the current screen dimensions and active breakpoint in a small, non-intrusive overlay during development.
 
 [![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![npm version](https://img.shields.io/npm/v/@greener-games/vite-screen-size.svg)](https://www.npmjs.com/package/@greener-games/vite-screen-size)
 [![npm downloads](https://img.shields.io/npm/dt/@greener-games/vite-screen-size.svg)](https://www.npmjs.com/package/@greener-games/vite-screen-size)
 [![GitHub stars](https://img.shields.io/github/stars/Greener-Games/Vite-Screen-Size.svg?style=social&label=Stars)](https://github.com/Greener-Games/Vite-Screen-Size)
