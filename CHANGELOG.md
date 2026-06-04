@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/Greener-Games/Vite-Screen-Size/compare/v1.0.2...v1.0.3) (2026-06-04)
+
+
+### Bug Fixes
+
+* update vite peerDependencies to support versions 5, 6, 7, and 8 ([e183e5e](https://github.com/Greener-Games/Vite-Screen-Size/commit/e183e5e9b884130b5d801c622f380af58d3285d7))
+
 ## [1.0.2](https://github.com/Greener-Games/Vite-Screen-Size/compare/v1.0.1...v1.0.2) (2026-05-24)
 
 
